@@ -1,11 +1,12 @@
 ---
 layout: default
 modal-id: 1
-date: 2014-07-15
-img: game.png
+date: 2014-07-17
+img: light-bulb.png
 alt: image-alt
 project-date: December 2016
 technology: C# & Microsoft Dynamics SDK 
 category: Desktop App Development
 description: The XRM Mailbox Stat Checker is a diagnostic tool that checks the status of Microsoft Dynamics CRM mailboxes. Mailbox Stat Checker also enables and approves emails and mailboxes at the press of a button. <a href="http://brianjvarley.github.io/XRM-Mailbox-Stat-Checker/">Check out the project page here.</a>.
+
 ---

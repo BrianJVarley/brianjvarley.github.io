@@ -50,8 +50,7 @@ address:
   - line: Galway City
   - line: Ireland
 
-# Credits content
-credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
+
 
 # Build settings
 markdown: kramdown

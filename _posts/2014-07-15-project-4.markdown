@@ -4,8 +4,8 @@ modal-id: 4
 date: 2014-07-15
 img: game.png
 alt: image-alt
-project-date: December 2016
-technology: C# & Microsoft Dynamics SDK 
-category: Desktop App Development
-description: The XRM Mailbox Stat Checker is a diagnostic tool that checks the status of Microsoft Dynamics CRM mailboxes. Mailbox Stat Checker also enables and approves emails and mailboxes at the press of a button. <a href="http://brianjvarley.github.io/XRM-Mailbox-Stat-Checker/">Check out the project page here.</a>.
+project-date: July 2016
+technology: C# & Windows Phone 8.1 
+category: Mobile App Development
+description: Unofficial Payzone Parking Mobile Parking Tag app for all Dublin City Zones <a href="https://www.microsoft.com/en-ie/store/p/parking-tag-picker/9nblggh4vglk">See it here on Windows Store.</a>.
 ---

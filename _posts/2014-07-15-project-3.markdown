@@ -2,7 +2,7 @@
 layout: default
 modal-id: 3
 date: 2014-07-15
-img: parkingtag.png
+img: light-bulb.png
 alt: image-alt
 project-date: July 2016
 technology: C# & Windows Phone 8.1 

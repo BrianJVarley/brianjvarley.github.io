@@ -2,7 +2,7 @@
 layout: default
 modal-id: 2
 date: 2014-07-16
-img: xrm.png
+img: graphs.png
 alt: image-alt
 project-date: July 2015
 technology: C# & Microsoft Dynamics SDK

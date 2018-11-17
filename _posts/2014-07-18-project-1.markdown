@@ -7,6 +7,6 @@ alt: image-alt
 project-date: April 2014
 technology: Android & Java
 category: Mobile App Development
-description: Simple Offset is a handy app for duct work installers and electricians.Calculate square offsets and risers by simply entering the offset length,depth and duct depth.. <a href="https://play.google.com/store/apps/details?id=varleyBrianJ.SimpleOffset&hl=en">Available now on Google Play Store </a>.
+description: Simple Offset is a handy app for duct work installers and electricians.Calculate square offsets and risers by simply entering the offset length,depth and duct depth.. <a href="https://play.google.com/store/apps/details?id=com.simpleoffsetpro">Available now on Google Play Store </a>.
 
 ---

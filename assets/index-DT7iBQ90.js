@@ -16646,13 +16646,13 @@ function HomePage() {
       "This portfolio is a micro-frontend shell — the Projects section runs in",
       " ",
       /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: "React" }),
-      ", the About section in ",
+      ",the About section in ",
       /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: "Vue" }),
-      " as a custom element, both composed at runtime via Module Federation 2.0."
+      " as a custom element,both composed at runtime via Module Federation 2.0."
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "home__cta-row", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("a", { href: "/projects", className: "btn btn--primary", children: "View Projects" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("a", { href: "/about", className: "btn btn--ghost", children: "About Me" })
+      /* @__PURE__ */ jsxRuntimeExports.jsx(__mf_9, { to: "/projects", className: "btn btn--primary", children: "View Projects" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(__mf_9, { to: "/about", className: "btn btn--ghost", children: "About Me" })
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "home__mfe-legend", "aria-hidden": "true", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "pill pill--react", children: "React Microfrontend ·" }),

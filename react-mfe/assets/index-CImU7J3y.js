@@ -1,10 +1,10 @@
-import './virtualExposes-CqTrH-gr.js';
-import './remoteEntry-ZnVLn-8t.js';
+import './virtualExposes-Cud8jPj_.js';
+import './remoteEntry-DaD0cWGV.js';
 import { Q as QueryClient, j as jsxRuntimeExports, a as QueryClientProvider, P as ProjectsPage } from './ProjectsPage-DuM89PVB.js';
 import { _ as __mf_6 } from './__mfe_internal__reactMfe__loadShare__react__loadShare__.js-DuKgHdWM.js';
 import { r as require$$0 } from './__mfe_internal__reactMfe__loadShare__react__loadShare__.js_commonjs-proxy-Cp-HEq3l.js';
 import { r as require$$2 } from './__mfe_internal__reactMfe__loadShare__react_mf_2_dom__loadShare__.js_commonjs-proxy-DD1Ye0Lf.js';
-import './preload-helper-BC7ZYKCr.js';
+import './preload-helper-C4ldYmuB.js';
 import './__mfe_internal__reactMfe__loadShare__react_mf_2_dom__loadShare__.js-DA8_iWDp.js';
 
 true              &&(function polyfill() {

@@ -1,0 +1,108 @@
+{
+  "../node_modules/.pnpm/vue@3.5.32_typescript@5.9.3/node_modules/vue/dist/vue.runtime.esm-bundler.js": {
+    "file": "assets/vue.runtime.esm-bundler-Bv2ejMVt.js",
+    "name": "vue.runtime.esm-bundler",
+    "src": "../node_modules/.pnpm/vue@3.5.32_typescript@5.9.3/node_modules/vue/dist/vue.runtime.esm-bundler.js",
+    "isDynamicEntry": true
+  },
+  ".__mf__temp/vueMfe/localSharedImportMap.js": {
+    "file": "assets/localSharedImportMap-DlLhiftj.js",
+    "name": "localSharedImportMap",
+    "src": ".__mf__temp/vueMfe/localSharedImportMap.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_preload-helper-BrBMkJ7E.js",
+      "virtual:mf-REMOTE_ENTRY_ID:__mfe_internal__vueMfe__remoteEntry-_hash_"
+    ],
+    "dynamicImports": [
+      "_index-C9FsFaH7.js",
+      "../node_modules/.pnpm/vue@3.5.32_typescript@5.9.3/node_modules/vue/dist/vue.runtime.esm-bundler.js"
+    ]
+  },
+  "_AboutPage-CQnTH9_X.js": {
+    "file": "assets/AboutPage-CQnTH9_X.js",
+    "name": "AboutPage",
+    "imports": [
+      "___mfe_internal__vueMfe__loadShare__vue__loadShare__.js-7Qbf8ykb.js"
+    ]
+  },
+  "___mfe_internal__vueMfe__loadShare__vue__loadShare__.js-7Qbf8ykb.js": {
+    "file": "assets/__mfe_internal__vueMfe__loadShare__vue__loadShare__.js-7Qbf8ykb.js",
+    "name": "__mfe_internal__vueMfe__loadShare__vue__loadShare__.js"
+  },
+  "_index-C9FsFaH7.js": {
+    "file": "assets/index-C9FsFaH7.js",
+    "name": "index",
+    "isDynamicEntry": true
+  },
+  "_preload-helper-BrBMkJ7E.js": {
+    "file": "assets/preload-helper-BrBMkJ7E.js",
+    "name": "preload-helper"
+  },
+  "index.html": {
+    "file": "assets/index-D0Efk8BT.js",
+    "name": "index",
+    "src": "index.html",
+    "isEntry": true,
+    "imports": [
+      "virtual:mf-exposes:__mfe_internal__vueMfe__remoteEntry-_hash_",
+      "virtual:mf-REMOTE_ENTRY_ID:__mfe_internal__vueMfe__remoteEntry-_hash_",
+      "___mfe_internal__vueMfe__loadShare__vue__loadShare__.js-7Qbf8ykb.js",
+      "_AboutPage-CQnTH9_X.js",
+      "_preload-helper-BrBMkJ7E.js"
+    ],
+    "css": [
+      "assets/index-jnWY2W29.css"
+    ]
+  },
+  "node_modules/__mf__virtual/__mfe_internal__vueMfe__H_A_I__hostAutoInit__H_A_I__.js": {
+    "file": "assets/hostInit-C2ecllDG.js",
+    "name": "hostInit",
+    "src": "node_modules/__mf__virtual/__mfe_internal__vueMfe__H_A_I__hostAutoInit__H_A_I__.js",
+    "isEntry": true,
+    "imports": [
+      "_preload-helper-BrBMkJ7E.js"
+    ],
+    "dynamicImports": [
+      "virtual:mf-REMOTE_ENTRY_ID:__mfe_internal__vueMfe__remoteEntry-_hash_"
+    ]
+  },
+  "src/AboutPageWrapper.tsx": {
+    "file": "assets/AboutPageWrapper-BViv2oOH.js",
+    "name": "AboutPageWrapper",
+    "src": "src/AboutPageWrapper.tsx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "___mfe_internal__vueMfe__loadShare__vue__loadShare__.js-7Qbf8ykb.js",
+      "_AboutPage-CQnTH9_X.js"
+    ]
+  },
+  "virtual:mf-REMOTE_ENTRY_ID:__mfe_internal__vueMfe__remoteEntry-_hash_": {
+    "file": "assets/remoteEntry-C2rlZX0D.js",
+    "name": "remoteEntry",
+    "src": "virtual:mf-REMOTE_ENTRY_ID:__mfe_internal__vueMfe__remoteEntry-_hash_",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_preload-helper-BrBMkJ7E.js"
+    ],
+    "dynamicImports": [
+      ".__mf__temp/vueMfe/localSharedImportMap.js",
+      "virtual:mf-exposes:__mfe_internal__vueMfe__remoteEntry-_hash_"
+    ]
+  },
+  "virtual:mf-exposes:__mfe_internal__vueMfe__remoteEntry-_hash_": {
+    "file": "assets/virtualExposes-DPVh_3TI.js",
+    "name": "virtualExposes",
+    "src": "virtual:mf-exposes:__mfe_internal__vueMfe__remoteEntry-_hash_",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_preload-helper-BrBMkJ7E.js"
+    ],
+    "dynamicImports": [
+      "src/AboutPageWrapper.tsx"
+    ]
+  }
+}

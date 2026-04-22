@@ -1,0 +1,135 @@
+{
+  "../node_modules/.pnpm/react-router-dom@7.14.1_react-dom@19.2.5_react@19.2.5__react@19.2.5/node_modules/react-router-dom/dist/index.mjs": {
+    "file": "assets/index-DY9gQB0o.js",
+    "name": "index",
+    "src": "../node_modules/.pnpm/react-router-dom@7.14.1_react-dom@19.2.5_react@19.2.5__react@19.2.5/node_modules/react-router-dom/dist/index.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      "___mfe_internal__reactMfe__loadShare__react__loadShare__.js-DuKgHdWM.js",
+      "___mfe_internal__reactMfe__loadShare__react_mf_2_dom__loadShare__.js-DA8_iWDp.js"
+    ]
+  },
+  ".__mf__temp/reactMfe/localSharedImportMap.js": {
+    "file": "assets/localSharedImportMap-BS9b6QYt.js",
+    "name": "localSharedImportMap",
+    "src": ".__mf__temp/reactMfe/localSharedImportMap.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_preload-helper-C4ldYmuB.js",
+      "virtual:mf-REMOTE_ENTRY_ID:__mfe_internal__reactMfe__remoteEntry-_hash_"
+    ],
+    "dynamicImports": [
+      "_index-BbwSWFgd.js",
+      "_index-Dtea_K5i.js",
+      "../node_modules/.pnpm/react-router-dom@7.14.1_react-dom@19.2.5_react@19.2.5__react@19.2.5/node_modules/react-router-dom/dist/index.mjs"
+    ]
+  },
+  "___mfe_internal__reactMfe__loadShare__react__loadShare__.js-DuKgHdWM.js": {
+    "file": "assets/__mfe_internal__reactMfe__loadShare__react__loadShare__.js-DuKgHdWM.js",
+    "name": "__mfe_internal__reactMfe__loadShare__react__loadShare__.js"
+  },
+  "___mfe_internal__reactMfe__loadShare__react__loadShare__.js_commonjs-proxy-Cp-HEq3l.js": {
+    "file": "assets/__mfe_internal__reactMfe__loadShare__react__loadShare__.js_commonjs-proxy-Cp-HEq3l.js",
+    "name": "__mfe_internal__reactMfe__loadShare__react__loadShare__.js_commonjs-proxy",
+    "imports": [
+      "___mfe_internal__reactMfe__loadShare__react__loadShare__.js-DuKgHdWM.js"
+    ]
+  },
+  "___mfe_internal__reactMfe__loadShare__react_mf_2_dom__loadShare__.js-DA8_iWDp.js": {
+    "file": "assets/__mfe_internal__reactMfe__loadShare__react_mf_2_dom__loadShare__.js-DA8_iWDp.js",
+    "name": "__mfe_internal__reactMfe__loadShare__react_mf_2_dom__loadShare__.js"
+  },
+  "___mfe_internal__reactMfe__loadShare__react_mf_2_dom__loadShare__.js_commonjs-proxy-DD1Ye0Lf.js": {
+    "file": "assets/__mfe_internal__reactMfe__loadShare__react_mf_2_dom__loadShare__.js_commonjs-proxy-DD1Ye0Lf.js",
+    "name": "__mfe_internal__reactMfe__loadShare__react_mf_2_dom__loadShare__.js_commonjs-proxy",
+    "imports": [
+      "___mfe_internal__reactMfe__loadShare__react__loadShare__.js_commonjs-proxy-Cp-HEq3l.js",
+      "___mfe_internal__reactMfe__loadShare__react_mf_2_dom__loadShare__.js-DA8_iWDp.js"
+    ]
+  },
+  "_index-BbwSWFgd.js": {
+    "file": "assets/index-BbwSWFgd.js",
+    "name": "index",
+    "isDynamicEntry": true,
+    "imports": [
+      "___mfe_internal__reactMfe__loadShare__react__loadShare__.js_commonjs-proxy-Cp-HEq3l.js"
+    ]
+  },
+  "_index-Dtea_K5i.js": {
+    "file": "assets/index-Dtea_K5i.js",
+    "name": "index",
+    "isDynamicEntry": true,
+    "imports": [
+      "___mfe_internal__reactMfe__loadShare__react__loadShare__.js_commonjs-proxy-Cp-HEq3l.js"
+    ]
+  },
+  "_preload-helper-C4ldYmuB.js": {
+    "file": "assets/preload-helper-C4ldYmuB.js",
+    "name": "preload-helper"
+  },
+  "index.html": {
+    "file": "assets/index-CImU7J3y.js",
+    "name": "index",
+    "src": "index.html",
+    "isEntry": true,
+    "imports": [
+      "virtual:mf-exposes:__mfe_internal__reactMfe__remoteEntry-_hash_",
+      "virtual:mf-REMOTE_ENTRY_ID:__mfe_internal__reactMfe__remoteEntry-_hash_",
+      "src/ProjectsPage.tsx",
+      "___mfe_internal__reactMfe__loadShare__react__loadShare__.js-DuKgHdWM.js",
+      "___mfe_internal__reactMfe__loadShare__react__loadShare__.js_commonjs-proxy-Cp-HEq3l.js",
+      "___mfe_internal__reactMfe__loadShare__react_mf_2_dom__loadShare__.js_commonjs-proxy-DD1Ye0Lf.js",
+      "_preload-helper-C4ldYmuB.js",
+      "___mfe_internal__reactMfe__loadShare__react_mf_2_dom__loadShare__.js-DA8_iWDp.js"
+    ]
+  },
+  "node_modules/__mf__virtual/__mfe_internal__reactMfe__H_A_I__hostAutoInit__H_A_I__.js": {
+    "file": "assets/hostInit-B0KK2bI3.js",
+    "name": "hostInit",
+    "src": "node_modules/__mf__virtual/__mfe_internal__reactMfe__H_A_I__hostAutoInit__H_A_I__.js",
+    "isEntry": true,
+    "imports": [
+      "_preload-helper-C4ldYmuB.js"
+    ],
+    "dynamicImports": [
+      "virtual:mf-REMOTE_ENTRY_ID:__mfe_internal__reactMfe__remoteEntry-_hash_"
+    ]
+  },
+  "src/ProjectsPage.tsx": {
+    "file": "assets/ProjectsPage-DuM89PVB.js",
+    "name": "ProjectsPage",
+    "src": "src/ProjectsPage.tsx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "___mfe_internal__reactMfe__loadShare__react__loadShare__.js-DuKgHdWM.js"
+    ]
+  },
+  "virtual:mf-REMOTE_ENTRY_ID:__mfe_internal__reactMfe__remoteEntry-_hash_": {
+    "file": "assets/remoteEntry-DaD0cWGV.js",
+    "name": "remoteEntry",
+    "src": "virtual:mf-REMOTE_ENTRY_ID:__mfe_internal__reactMfe__remoteEntry-_hash_",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_preload-helper-C4ldYmuB.js"
+    ],
+    "dynamicImports": [
+      ".__mf__temp/reactMfe/localSharedImportMap.js",
+      "virtual:mf-exposes:__mfe_internal__reactMfe__remoteEntry-_hash_"
+    ]
+  },
+  "virtual:mf-exposes:__mfe_internal__reactMfe__remoteEntry-_hash_": {
+    "file": "assets/virtualExposes-Cud8jPj_.js",
+    "name": "virtualExposes",
+    "src": "virtual:mf-exposes:__mfe_internal__reactMfe__remoteEntry-_hash_",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_preload-helper-C4ldYmuB.js"
+    ],
+    "dynamicImports": [
+      "src/ProjectsPage.tsx"
+    ]
+  }
+}

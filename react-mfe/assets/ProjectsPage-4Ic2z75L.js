@@ -13217,6 +13217,7 @@ const projects = [
       "NgRx",
       "RxJS",
       "REST",
+      "Signals",
       "WebSocket",
       "Web Components",
       "Highcharts",

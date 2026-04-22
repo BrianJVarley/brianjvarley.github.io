@@ -235,6 +235,27 @@ strong { font-weight: 500; }
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--muted);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.site-footer__links {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.footer-link {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--muted);
+  transition: color var(--transition);
+}
+
+.footer-link:hover {
+  color: var(--text);
 }
 
 /* ─── Animations ─────────────────────────────────────────────────────── */

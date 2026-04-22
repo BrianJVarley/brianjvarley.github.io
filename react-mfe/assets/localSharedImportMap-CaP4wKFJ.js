@@ -1,5 +1,5 @@
 import { _ as __vitePreload } from './preload-helper-C4ldYmuB.js';
-import './remoteEntry-DaD0cWGV.js';
+import './remoteEntry-BCyj5ER7.js';
 
 const importMap = {
       

@@ -1,11 +1,11 @@
-import './virtualExposes-Cud8jPj_.js';
-import './remoteEntry-DaD0cWGV.js';
-import { Q as QueryClient, j as jsxRuntimeExports, a as QueryClientProvider, P as ProjectsPage } from './ProjectsPage-DuM89PVB.js';
-import { _ as __mf_6 } from './__mfe_internal__reactMfe__loadShare__react__loadShare__.js-DuKgHdWM.js';
-import { r as require$$0 } from './__mfe_internal__reactMfe__loadShare__react__loadShare__.js_commonjs-proxy-Cp-HEq3l.js';
-import { r as require$$2 } from './__mfe_internal__reactMfe__loadShare__react_mf_2_dom__loadShare__.js_commonjs-proxy-DD1Ye0Lf.js';
-import './preload-helper-C4ldYmuB.js';
-import './__mfe_internal__reactMfe__loadShare__react_mf_2_dom__loadShare__.js-DA8_iWDp.js';
+import './virtualExposes-C-isMpw_.js';
+import './remoteEntry-CnHaXhDs.js';
+import { _ as __mf_34, a as __mf_18, b as __mf_7, c as __mf_6 } from './__mfe_internal__shell__loadShare__react__loadShare__.js-Dot6ODtv.js';
+import { r as require$$0 } from './__mfe_internal__shell__loadShare__react__loadShare__.js_commonjs-proxy-BMPnSeZa.js';
+import { r as require$$2 } from './__mfe_internal__shell__loadShare__react_mf_2_dom__loadShare__.js_commonjs-proxy-Cg7-2kji.js';
+import { _ as __vitePreload } from './preload-helper-BC7ZYKCr.js';
+import { _ as __mf_5, a as __mf_9, b as __mf_13, c as __mf_21, d as __mf_18$1 } from './__mfe_internal__shell__loadShare__react_mf_2_router_mf_2_dom__loadShare__.js-DJ08eJx_.js';
+import './__mfe_internal__shell__loadShare__react_mf_2_dom__loadShare__.js-DN5ipFSn.js';
 
 true              &&(function polyfill() {
   const relList = document.createElement("link").relList;
@@ -44,6 +44,49 @@ true              &&(function polyfill() {
     fetch(link.href, fetchOpts);
   }
 }());
+
+var jsxRuntime = {exports: {}};
+
+var reactJsxRuntime_production = {};
+
+/**
+ * @license React
+ * react-jsx-runtime.production.js
+ *
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+var REACT_ELEMENT_TYPE$1 = Symbol.for("react.transitional.element"),
+  REACT_FRAGMENT_TYPE$1 = Symbol.for("react.fragment");
+function jsxProd(type, config, maybeKey) {
+  var key = null;
+  void 0 !== maybeKey && (key = "" + maybeKey);
+  void 0 !== config.key && (key = "" + config.key);
+  if ("key" in config) {
+    maybeKey = {};
+    for (var propName in config)
+      "key" !== propName && (maybeKey[propName] = config[propName]);
+  } else maybeKey = config;
+  config = maybeKey.ref;
+  return {
+    $$typeof: REACT_ELEMENT_TYPE$1,
+    type: type,
+    key: key,
+    ref: void 0 !== config ? config : null,
+    props: maybeKey
+  };
+}
+reactJsxRuntime_production.Fragment = REACT_FRAGMENT_TYPE$1;
+reactJsxRuntime_production.jsx = jsxProd;
+reactJsxRuntime_production.jsxs = jsxProd;
+
+{
+  jsxRuntime.exports = reactJsxRuntime_production;
+}
+
+var jsxRuntimeExports = jsxRuntime.exports;
 
 var client = {exports: {}};
 
@@ -16458,30 +16501,167 @@ function checkDCE() {
 
 var clientExports = client.exports;
 
-const queryClient = new QueryClient({
-  defaultOptions: {
-    queries: {
-      staleTime: 1e3 * 60 * 5,
-      refetchOnWindowFocus: true,
-      refetchOnMount: true
-    }
-  }
-});
+function useLoadingFallback(label) {
+  const dots = __mf_34(() => [0, 1, 2], []);
+  return {
+    ariaLabel: `Loading ${label}`,
+    dots
+  };
+}
+
+const ProjectsPage = __mf_18(() => __vitePreload(() => import('./__mfe_internal__shell__loadRemote__reactMfe_mf_1_ProjectsPage__loadRemote__-5yHhH10N.js').then(n => n._),true              ?[]:void 0));
+const AboutPage = __mf_18(() => __vitePreload(() => import('./__mfe_internal__shell__loadRemote__vueMfe_mf_1_AboutPage__loadRemote__-De1m5T9P.js').then(n => n._),true              ?[]:void 0));
+function LoadingFallback({ label }) {
+  const { ariaLabel, dots } = useLoadingFallback(label);
+  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mfe-loading", role: "status", "aria-label": ariaLabel, children: dots.map((dot) => /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "mfe-loading__dot" }, dot)) });
+}
+function ErrorFallback({ name }) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mfe-error", role: "alert", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { children: [
+      "Could not load ",
+      /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: name }),
+      "."
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mfe-error__hint", children: "Make sure the remote is running on the correct port." })
+  ] });
+}
+function App() {
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(__mf_5, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "layout", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("header", { className: "site-header", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(__mf_9, { to: "/", className: "wordmark", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "wordmark__first", children: "Brian" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "wordmark__last", children: "Varley" })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("nav", { className: "site-nav", "aria-label": "Main navigation", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          __mf_13,
+          {
+            to: "/",
+            end: true,
+            className: ({ isActive }) => isActive ? "nav-link nav-link--active" : "nav-link",
+            children: "Home"
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          __mf_13,
+          {
+            to: "/projects",
+            className: ({ isActive }) => isActive ? "nav-link nav-link--active" : "nav-link",
+            children: "Projects"
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          __mf_13,
+          {
+            to: "/about",
+            className: ({ isActive }) => isActive ? "nav-link nav-link--active" : "nav-link",
+            children: "About"
+          }
+        )
+      ] })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("main", { className: "main-content", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(__mf_21, { children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(__mf_18$1, { path: "/", element: /* @__PURE__ */ jsxRuntimeExports.jsx(HomePage, {}) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        __mf_18$1,
+        {
+          path: "/projects",
+          element: /* @__PURE__ */ jsxRuntimeExports.jsx(__mf_7, { fallback: /* @__PURE__ */ jsxRuntimeExports.jsx(LoadingFallback, { label: "Projects" }), children: /* @__PURE__ */ jsxRuntimeExports.jsx(ProjectsPage, {}) }),
+          errorElement: /* @__PURE__ */ jsxRuntimeExports.jsx(ErrorFallback, { name: "React MFE (Projects)" })
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        __mf_18$1,
+        {
+          path: "/about",
+          element: /* @__PURE__ */ jsxRuntimeExports.jsx(__mf_7, { fallback: /* @__PURE__ */ jsxRuntimeExports.jsx(LoadingFallback, { label: "About" }), children: /* @__PURE__ */ jsxRuntimeExports.jsx(AboutPage, {}) }),
+          errorElement: /* @__PURE__ */ jsxRuntimeExports.jsx(ErrorFallback, { name: "Vue MFE (About)" })
+        }
+      )
+    ] }) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("footer", { className: "site-footer", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Built with React + Vue · Module Federation 2.0" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "site-footer__links", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          "a",
+          {
+            href: "https://github.com/BrianJVarley",
+            target: "_blank",
+            rel: "noopener noreferrer",
+            className: "footer-link",
+            "aria-label": "GitHub profile",
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "svg",
+                {
+                  width: "16",
+                  height: "16",
+                  viewBox: "0 0 24 24",
+                  fill: "currentColor",
+                  "aria-hidden": "true",
+                  children: /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z" })
+                }
+              ),
+              "GitHub"
+            ]
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          "a",
+          {
+            href: "https://www.linkedin.com/in/brianvarleyj",
+            target: "_blank",
+            rel: "noopener noreferrer",
+            className: "footer-link",
+            "aria-label": "LinkedIn profile",
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "svg",
+                {
+                  width: "16",
+                  height: "16",
+                  viewBox: "0 0 24 24",
+                  fill: "currentColor",
+                  "aria-hidden": "true",
+                  children: /* @__PURE__ */ jsxRuntimeExports.jsx("path", { d: "M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" })
+                }
+              ),
+              "LinkedIn"
+            ]
+          }
+        )
+      ] })
+    ] })
+  ] }) });
+}
+function HomePage() {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("section", { className: "home", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "home__eyebrow", children: "Frontend Engineer" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("h1", { className: "home__headline", children: [
+      "A snapshot of my",
+      /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("em", { children: "work & experience." })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "home__sub", children: [
+      "This portfolio is a micro-frontend shell — the Projects section runs in",
+      " ",
+      /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: "React" }),
+      ", the About section in ",
+      /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: "Vue" }),
+      " as a custom element, both composed at runtime via Module Federation 2.0."
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "home__cta-row", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("a", { href: "/projects", className: "btn btn--primary", children: "View Projects" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("a", { href: "/about", className: "btn btn--ghost", children: "About Me" })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "home__mfe-legend", "aria-hidden": "true", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "pill pill--react", children: "React Microfrontend ·" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "pill pill--vue", children: "Vue Microfrontend ·" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "pill pill--shell", children: "React Shell app " })
+    ] })
+  ] });
+}
+
 clientExports.createRoot(document.getElementById("root")).render(
-  /* @__PURE__ */ jsxRuntimeExports.jsx(__mf_6, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { style: { padding: "2rem" }, children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx(
-      "p",
-      {
-        style: {
-          fontSize: "0.7rem",
-          letterSpacing: "0.15em",
-          textTransform: "uppercase",
-          color: "#6b6970",
-          marginBottom: "2rem"
-        },
-        children: "↳ React MFE · Standalone dev mode"
-      }
-    ),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(QueryClientProvider, { client: queryClient, children: /* @__PURE__ */ jsxRuntimeExports.jsx(ProjectsPage, {}) })
-  ] }) })
+  /* @__PURE__ */ jsxRuntimeExports.jsx(__mf_6, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(App, {}) })
 );

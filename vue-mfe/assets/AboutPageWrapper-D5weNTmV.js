@@ -1,5 +1,5 @@
 import { _ as __mf_6 } from './__mfe_internal__vueMfe__loadShare__vue__loadShare__.js-7Qbf8ykb.js';
-import { A as AboutPage$1, c as createPinia } from './AboutPage-CQnTH9_X.js';
+import { A as AboutPage$1, c as createPinia } from './AboutPage-BnqoWZo2.js';
 
 var jsxRuntime = {exports: {}};
 

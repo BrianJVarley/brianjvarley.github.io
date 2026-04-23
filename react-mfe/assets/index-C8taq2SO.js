@@ -1,6 +1,6 @@
-import './virtualExposes-Dg1aUkQS.js';
-import './remoteEntry-B0q3i4vF.js';
-import { Q as QueryClient, j as jsxRuntimeExports, a as QueryClientProvider, P as ProjectsPage } from './ProjectsPage-F8OQNg7r.js';
+import './virtualExposes-CPsNXfjM.js';
+import './remoteEntry-mIkWr24d.js';
+import { Q as QueryClient, j as jsxRuntimeExports, a as QueryClientProvider, P as ProjectsPage } from './ProjectsPage-CGuWwMqF.js';
 import { _ as __mf_6 } from './__mfe_internal__reactMfe__loadShare__react__loadShare__.js-DuKgHdWM.js';
 import { r as require$$0 } from './__mfe_internal__reactMfe__loadShare__react__loadShare__.js_commonjs-proxy-Cp-HEq3l.js';
 import { r as require$$2 } from './__mfe_internal__reactMfe__loadShare__react_mf_2_dom__loadShare__.js_commonjs-proxy-DD1Ye0Lf.js';

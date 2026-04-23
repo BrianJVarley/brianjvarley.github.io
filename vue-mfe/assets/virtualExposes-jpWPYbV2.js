@@ -56,7 +56,7 @@ const cssAssetMap = {};
         "./AboutPage": async () => {
           await injectCssAssets("./AboutPage");
           const importModule = await importExposedModule(
-            () => __vitePreload(() => import('./AboutPageWrapper-CxvPEdyb.js'),true              ?[]:void 0)
+            () => __vitePreload(() => import('./AboutPageWrapper-BdV99nMj.js'),true              ?[]:void 0)
           );
           const exportModule = {};
           Object.assign(exportModule, importModule);

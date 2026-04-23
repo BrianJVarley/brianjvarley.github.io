@@ -10,7 +10,7 @@
     ]
   },
   ".__mf__temp/reactMfe/localSharedImportMap.js": {
-    "file": "assets/localSharedImportMap-CaP4wKFJ.js",
+    "file": "assets/localSharedImportMap-6Kt9BnJP.js",
     "name": "localSharedImportMap",
     "src": ".__mf__temp/reactMfe/localSharedImportMap.js",
     "isDynamicEntry": true,
@@ -68,7 +68,7 @@
     "name": "preload-helper"
   },
   "index.html": {
-    "file": "assets/index-BQaej7de.js",
+    "file": "assets/index-DdjPZei5.js",
     "name": "index",
     "src": "index.html",
     "isEntry": true,
@@ -84,7 +84,7 @@
     ]
   },
   "node_modules/__mf__virtual/__mfe_internal__reactMfe__H_A_I__hostAutoInit__H_A_I__.js": {
-    "file": "assets/hostInit-CL49fkL9.js",
+    "file": "assets/hostInit-OKnnLF7S.js",
     "name": "hostInit",
     "src": "node_modules/__mf__virtual/__mfe_internal__reactMfe__H_A_I__hostAutoInit__H_A_I__.js",
     "isEntry": true,
@@ -96,7 +96,7 @@
     ]
   },
   "src/ProjectsPage.tsx": {
-    "file": "assets/ProjectsPage-4Ic2z75L.js",
+    "file": "assets/ProjectsPage-F8OQNg7r.js",
     "name": "ProjectsPage",
     "src": "src/ProjectsPage.tsx",
     "isEntry": true,
@@ -106,7 +106,7 @@
     ]
   },
   "virtual:mf-REMOTE_ENTRY_ID:__mfe_internal__reactMfe__remoteEntry-_hash_": {
-    "file": "assets/remoteEntry-BCyj5ER7.js",
+    "file": "assets/remoteEntry-B0q3i4vF.js",
     "name": "remoteEntry",
     "src": "virtual:mf-REMOTE_ENTRY_ID:__mfe_internal__reactMfe__remoteEntry-_hash_",
     "isEntry": true,
@@ -120,7 +120,7 @@
     ]
   },
   "virtual:mf-exposes:__mfe_internal__reactMfe__remoteEntry-_hash_": {
-    "file": "assets/virtualExposes-BQ8hNmo1.js",
+    "file": "assets/virtualExposes-Dg1aUkQS.js",
     "name": "virtualExposes",
     "src": "virtual:mf-exposes:__mfe_internal__reactMfe__remoteEntry-_hash_",
     "isEntry": true,

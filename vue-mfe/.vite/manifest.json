@@ -6,7 +6,7 @@
     "isDynamicEntry": true
   },
   ".__mf__temp/vueMfe/localSharedImportMap.js": {
-    "file": "assets/localSharedImportMap-CatRCBel.js",
+    "file": "assets/localSharedImportMap-aBABwyx2.js",
     "name": "localSharedImportMap",
     "src": ".__mf__temp/vueMfe/localSharedImportMap.js",
     "isDynamicEntry": true,
@@ -19,15 +19,15 @@
       "../node_modules/.pnpm/vue@3.5.32_typescript@5.9.3/node_modules/vue/dist/vue.runtime.esm-bundler.js"
     ]
   },
-  "_AboutPage-BnqoWZo2.js": {
-    "file": "assets/AboutPage-BnqoWZo2.js",
+  "_AboutPage-D2rJ4FQG.js": {
+    "file": "assets/AboutPage-D2rJ4FQG.js",
     "name": "AboutPage",
     "imports": [
-      "___mfe_internal__vueMfe__loadShare__vue__loadShare__.js-7Qbf8ykb.js"
+      "___mfe_internal__vueMfe__loadShare__vue__loadShare__.js-BPbMAQkh.js"
     ]
   },
-  "___mfe_internal__vueMfe__loadShare__vue__loadShare__.js-7Qbf8ykb.js": {
-    "file": "assets/__mfe_internal__vueMfe__loadShare__vue__loadShare__.js-7Qbf8ykb.js",
+  "___mfe_internal__vueMfe__loadShare__vue__loadShare__.js-BPbMAQkh.js": {
+    "file": "assets/__mfe_internal__vueMfe__loadShare__vue__loadShare__.js-BPbMAQkh.js",
     "name": "__mfe_internal__vueMfe__loadShare__vue__loadShare__.js"
   },
   "_index-C9FsFaH7.js": {
@@ -40,15 +40,15 @@
     "name": "preload-helper"
   },
   "index.html": {
-    "file": "assets/index-CbshX5ac.js",
+    "file": "assets/index-Du1uc8Gu.js",
     "name": "index",
     "src": "index.html",
     "isEntry": true,
     "imports": [
       "virtual:mf-exposes:__mfe_internal__vueMfe__remoteEntry-_hash_",
       "virtual:mf-REMOTE_ENTRY_ID:__mfe_internal__vueMfe__remoteEntry-_hash_",
-      "___mfe_internal__vueMfe__loadShare__vue__loadShare__.js-7Qbf8ykb.js",
-      "_AboutPage-BnqoWZo2.js",
+      "___mfe_internal__vueMfe__loadShare__vue__loadShare__.js-BPbMAQkh.js",
+      "_AboutPage-D2rJ4FQG.js",
       "_preload-helper-BrBMkJ7E.js"
     ],
     "css": [
@@ -56,7 +56,7 @@
     ]
   },
   "node_modules/__mf__virtual/__mfe_internal__vueMfe__H_A_I__hostAutoInit__H_A_I__.js": {
-    "file": "assets/hostInit-B4JNOjIZ.js",
+    "file": "assets/hostInit-DP6vO_EH.js",
     "name": "hostInit",
     "src": "node_modules/__mf__virtual/__mfe_internal__vueMfe__H_A_I__hostAutoInit__H_A_I__.js",
     "isEntry": true,
@@ -68,18 +68,18 @@
     ]
   },
   "src/AboutPageWrapper.tsx": {
-    "file": "assets/AboutPageWrapper-D5weNTmV.js",
+    "file": "assets/AboutPageWrapper-CxvPEdyb.js",
     "name": "AboutPageWrapper",
     "src": "src/AboutPageWrapper.tsx",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "___mfe_internal__vueMfe__loadShare__vue__loadShare__.js-7Qbf8ykb.js",
-      "_AboutPage-BnqoWZo2.js"
+      "___mfe_internal__vueMfe__loadShare__vue__loadShare__.js-BPbMAQkh.js",
+      "_AboutPage-D2rJ4FQG.js"
     ]
   },
   "virtual:mf-REMOTE_ENTRY_ID:__mfe_internal__vueMfe__remoteEntry-_hash_": {
-    "file": "assets/remoteEntry-Bhyp4y5R.js",
+    "file": "assets/remoteEntry-s_bnlv9E.js",
     "name": "remoteEntry",
     "src": "virtual:mf-REMOTE_ENTRY_ID:__mfe_internal__vueMfe__remoteEntry-_hash_",
     "isEntry": true,
@@ -93,7 +93,7 @@
     ]
   },
   "virtual:mf-exposes:__mfe_internal__vueMfe__remoteEntry-_hash_": {
-    "file": "assets/virtualExposes-BblNf1Nr.js",
+    "file": "assets/virtualExposes-DylV8jDw.js",
     "name": "virtualExposes",
     "src": "virtual:mf-exposes:__mfe_internal__vueMfe__remoteEntry-_hash_",
     "isEntry": true,

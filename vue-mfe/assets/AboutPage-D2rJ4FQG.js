@@ -1,4 +1,4 @@
-import { g as __mf_50, h as __mf_80, i as __mf_37, j as __mf_35, k as __mf_51, l as __mf_31, m as __mf_45, n as __mf_39, o as __mf_106, p as __mf_112, q as __mf_43, r as __mf_32, s as __mf_40, t as __mf_161, u as __mf_119, v as __mf_52, a as __mf_93, b as __mf_132, c as __mf_83, d as __mf_84, w as __mf_61, x as __mf_69, y as __mf_138, z as __mf_55, A as __mf_58, e as __mf_91, B as __mf_2, C as __mf_166, D as __mf_60 } from './__mfe_internal__vueMfe__loadShare__vue__loadShare__.js-7Qbf8ykb.js';
+import { g as __mf_50, h as __mf_80, i as __mf_37, j as __mf_35, k as __mf_51, l as __mf_31, m as __mf_45, n as __mf_39, o as __mf_106, p as __mf_112, q as __mf_43, r as __mf_32, s as __mf_40, t as __mf_161, u as __mf_119, v as __mf_52, w as __mf_121, x as __mf_126, y as __mf_123, z as __mf_131, A as __mf_130, a as __mf_93, b as __mf_132, c as __mf_83, d as __mf_84, B as __mf_61, C as __mf_69, D as __mf_138, E as __mf_55, F as __mf_58, e as __mf_91, G as __mf_2, H as __mf_166, I as __mf_113, J as __mf_60 } from './__mfe_internal__vueMfe__loadShare__vue__loadShare__.js-BPbMAQkh.js';
 
 /*!
  * pinia v3.0.4
@@ -396,6 +396,29 @@ const useSkillsStore = defineStore("skills", () => {
   return { selectedCategory, filteredSkills, setCategory };
 });
 
+function useRenderLogger(componentName) {
+  const renderCount = __mf_45(0);
+  __mf_80(() => {
+    return renderCount.value > 10 ? `Re-rendered more than ${renderCount.value} times` : "";
+  });
+  __mf_161(renderCount, async (newCount, oldCount) => {
+    if (newCount % oldCount > 0) {
+      console.log("render count modulus:", newCount % oldCount);
+    }
+  });
+  const viewUpdated = () => {
+    renderCount.value++;
+    console.log(
+      `[${componentName}] 🔁 re-rendered (${renderCount.value} updates)`
+    );
+  };
+  __mf_121(() => console.log(`[${componentName}] ⏳ before mount`));
+  __mf_126(() => console.log(`[${componentName}] ✅ mounted`));
+  __mf_123(() => console.log(`[${componentName}] 🔄 before update`));
+  __mf_131(viewUpdated);
+  __mf_130(() => console.log(`[${componentName}] ❌ unmounted`));
+}
+
 const _hoisted_1 = { class: "mfe-page about" };
 const _hoisted_2 = { class: "about__intro" };
 const _hoisted_3 = { class: "about__lead" };
@@ -431,6 +454,7 @@ const _hoisted_19 = { class: "value-card__desc" };
 const _sfc_main = /* @__PURE__ */ __mf_93({
   __name: "AboutPage",
   setup(__props) {
+    useRenderLogger("AboutPage");
     const yearsExp = __mf_80(() => (/* @__PURE__ */ new Date()).getFullYear() - 2015);
     const skillsStore = useSkillsStore();
     const { selectedCategory, filteredSkills } = storeToRefs(skillsStore);
@@ -473,14 +497,14 @@ const _sfc_main = /* @__PURE__ */ __mf_93({
     ];
     return (_ctx, _cache) => {
       return __mf_132(), __mf_83("section", _hoisted_1, [
-        _cache[4] || (_cache[4] = __mf_84("span", { class: "mfe-badge" }, "Vue MFE", -1)),
+        _cache[6] || (_cache[6] = __mf_84("span", { class: "mfe-badge" }, "Vue MFE", -1)),
         __mf_84("div", _hoisted_2, [
-          _cache[0] || (_cache[0] = __mf_84("h2", { class: "section-title" }, "About Me", -1)),
+          _cache[2] || (_cache[2] = __mf_84("h2", { class: "section-title" }, "About Me", -1)),
           __mf_84("p", _hoisted_3, " Senior Frontend Engineer with " + __mf_61(yearsExp.value) + "+ years building production web applications and libraries — fintech, unified communications, accessibility, design systems. ", 1)
         ]),
         __mf_84("div", _hoisted_4, [
           __mf_84("div", _hoisted_5, [
-            _cache[1] || (_cache[1] = __mf_84("h3", { class: "col-heading" }, "Stack", -1)),
+            _cache[3] || (_cache[3] = __mf_84("h3", { class: "col-heading" }, "Stack", -1)),
             __mf_84("div", _hoisted_6, [
               (__mf_132(true), __mf_83(__mf_69, null, __mf_138(__mf_55(CATEGORIES), (cat) => {
                 return __mf_132(), __mf_83("button", {
@@ -501,8 +525,10 @@ const _sfc_main = /* @__PURE__ */ __mf_93({
               role: "list"
             }, {
               default: __mf_166(() => [
-                (__mf_132(true), __mf_83(__mf_69, null, __mf_138(__mf_55(filteredSkills), (skill) => {
-                  return __mf_132(), __mf_83("li", {
+                (__mf_132(true), __mf_83(__mf_69, null, __mf_138(__mf_55(filteredSkills), (skill, __, ___, _cached) => {
+                  const _memo = [skill.name];
+                  if (_cached && _cached.el && _cached.key === skill.name && __mf_113(_cached, _memo)) return _cached;
+                  const _item = (__mf_132(), __mf_83("li", {
                     key: skill.name,
                     class: "skill-item"
                   }, [
@@ -513,14 +539,16 @@ const _sfc_main = /* @__PURE__ */ __mf_93({
                       "aria-hidden": "true"
                     }, null, 4),
                     __mf_84("span", _hoisted_9, __mf_61(skill.level) + "%", 1)
-                  ]);
-                }), 128))
+                  ]));
+                  _item.memo = _memo;
+                  return _item;
+                }, _cache, 0), 128))
               ]),
               _: 1
             })
           ]),
           __mf_84("div", _hoisted_10, [
-            _cache[2] || (_cache[2] = __mf_84("h3", { class: "col-heading" }, "Experience", -1)),
+            _cache[4] || (_cache[4] = __mf_84("h3", { class: "col-heading" }, "Experience", -1)),
             __mf_84("ul", _hoisted_11, [
               (__mf_132(), __mf_83(__mf_69, null, __mf_138(roles, (role) => {
                 return __mf_84("li", {
@@ -535,7 +563,7 @@ const _sfc_main = /* @__PURE__ */ __mf_93({
             ])
           ]),
           __mf_84("div", _hoisted_15, [
-            _cache[3] || (_cache[3] = __mf_84("h3", { class: "col-heading" }, "Values", -1)),
+            _cache[5] || (_cache[5] = __mf_84("h3", { class: "col-heading" }, "Values", -1)),
             __mf_84("ul", _hoisted_16, [
               (__mf_132(), __mf_83(__mf_69, null, __mf_138(values, (v) => {
                 return __mf_84("li", {
@@ -557,7 +585,7 @@ const _sfc_main = /* @__PURE__ */ __mf_93({
   }
 });
 
-const _style_0 = "\n.about[data-v-67440b5c] {\n  font-family: \"DM Mono\", monospace;\n}\n.mfe-badge[data-v-67440b5c] {\n  display: inline-block;\n  font-size: 0.6rem;\n  letter-spacing: 0.15em;\n  text-transform: uppercase;\n  padding: 0.2rem 0.6rem;\n  border-radius: 999px;\n  border: 1px solid #42b883;\n  color: #42b883;\n  margin-bottom: 1.25rem;\n}\n.about__intro[data-v-67440b5c] {\n  margin-bottom: 3rem;\n}\n.section-title[data-v-67440b5c] {\n  font-family: \"DM Serif Display\", Georgia, serif;\n  font-size: clamp(1.8rem, 4vw, 2.8rem);\n  letter-spacing: -0.03em;\n  color: #e8e6e1;\n  margin-bottom: 0.75rem;\n}\n.about__lead[data-v-67440b5c] {\n  font-size: 0.875rem;\n  line-height: 1.7;\n  color: #9a9898;\n  max-width: 520px;\n}\n.about__grid[data-v-67440b5c] {\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n  gap: 3rem 4rem;\n}\n.about__col--full[data-v-67440b5c] {\n  grid-column: 1 / -1;\n}\n.col-heading[data-v-67440b5c] {\n  font-size: 0.65rem;\n  letter-spacing: 0.2em;\n  text-transform: uppercase;\n  color: #6b6970;\n  margin-bottom: 1.5rem;\n  padding-bottom: 0.5rem;\n  border-bottom: 1px solid #222228;\n}\n\n/* ── Skill filter tabs ── */\n.skill-tabs[data-v-67440b5c] {\n  display: flex;\n  gap: 0.35rem;\n  margin-bottom: 1.25rem;\n  flex-wrap: wrap;\n}\n.tab-btn[data-v-67440b5c] {\n  font-family: inherit;\n  font-size: 0.65rem;\n  letter-spacing: 0.1em;\n  text-transform: uppercase;\n  padding: 0.25rem 0.65rem;\n  border-radius: 999px;\n  border: 1px solid #2a2a30;\n  background: transparent;\n  color: #6b6970;\n  cursor: pointer;\n  transition:\n    border-color 150ms ease,\n    color 150ms ease,\n    background 150ms ease;\n}\n.tab-btn[data-v-67440b5c]:hover {\n  border-color: #42b883;\n  color: #42b883;\n}\n.tab-btn--active[data-v-67440b5c] {\n  border-color: #42b883;\n  color: #42b883;\n  background: rgba(66, 184, 131, 0.08);\n}\n\n/* ── Skills ── */\n.skill-list[data-v-67440b5c] {\n  list-style: none;\n  padding: 0;\n  display: flex;\n  flex-direction: column;\n  gap: 0.85rem;\n}\n.skill-item[data-v-67440b5c] {\n  display: grid;\n  grid-template-columns: 130px 1fr;\n  align-items: center;\n  gap: 1rem;\n  font-size: 0.75rem;\n  color: #9a9898;\n}\n.skill-item__bar[data-v-67440b5c] {\n  display: block;\n  height: 2px;\n  background: #222228;\n  border-radius: 999px;\n  position: relative;\n  overflow: hidden;\n}\n.skill-item__bar[data-v-67440b5c]::after {\n  content: \"\";\n  position: absolute;\n  inset: 0;\n  width: var(--w, 0%);\n  background: #42b883;\n  border-radius: 999px;\n  animation: barGrow-67440b5c 0.8s cubic-bezier(0.4, 0, 0.2, 1) both;\n}\n@keyframes barGrow-67440b5c {\nfrom {\n    width: 0;\n}\nto {\n    width: var(--w);\n}\n}\n\n/* ── TransitionGroup: .skill-enter/leave classes ── */\n.skill-list[data-v-67440b5c] {\n  position: relative; /* anchor for leave-active absolute positioning */\n}\n.skill-enter-active[data-v-67440b5c],\n.skill-leave-active[data-v-67440b5c] {\n  transition:\n    opacity 0.25s ease,\n    transform 0.25s ease;\n}\n\n/* Item that is leaving is taken out of flow so others can FLIP into place */\n.skill-leave-active[data-v-67440b5c] {\n  position: absolute;\n  width: 100%;\n}\n.skill-enter-from[data-v-67440b5c] {\n  opacity: 0;\n  transform: translateX(-10px);\n}\n.skill-leave-to[data-v-67440b5c] {\n  opacity: 0;\n  transform: translateX(10px);\n}\n\n/* ── Timeline ── */\n.timeline[data-v-67440b5c] {\n  list-style: none;\n  padding: 0;\n  display: flex;\n  flex-direction: column;\n  gap: 0;\n}\n.timeline__item[data-v-67440b5c] {\n  display: grid;\n  grid-template-columns: 72px 1fr;\n  grid-template-rows: auto auto;\n  column-gap: 1rem;\n  padding: 0.9rem 0;\n  border-bottom: 1px solid #1a1a1f;\n  font-size: 0.75rem;\n}\n.timeline__period[data-v-67440b5c] {\n  grid-row: 1 / 3;\n  color: #6b6970;\n  font-size: 0.65rem;\n  padding-top: 2px;\n  letter-spacing: 0.05em;\n}\n.timeline__role[data-v-67440b5c] {\n  color: #e8e6e1;\n}\n.timeline__company[data-v-67440b5c] {\n  color: #6b6970;\n  font-size: 0.7rem;\n  margin-top: 2px;\n}\n\n/* ── Values ── */\n.values-list[data-v-67440b5c] {\n  list-style: none;\n  padding: 0;\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));\n  gap: 1px;\n  border: 1px solid #222228;\n}\n.value-card[data-v-67440b5c] {\n  background: #131316;\n  padding: 1.5rem;\n  display: flex;\n  gap: 1rem;\n  align-items: flex-start;\n  transition: background 200ms ease;\n}\n.value-card[data-v-67440b5c]:hover {\n  background: #1a1a1f;\n}\n.value-card__icon[data-v-67440b5c] {\n  font-size: 1.2rem;\n  flex-shrink: 0;\n  margin-top: 2px;\n}\n.value-card__label[data-v-67440b5c] {\n  display: block;\n  font-size: 0.8rem;\n  color: #e8e6e1;\n  margin-bottom: 0.4rem;\n  font-weight: 500;\n}\n.value-card__desc[data-v-67440b5c] {\n  font-size: 0.75rem;\n  line-height: 1.6;\n  color: #6b6970;\n}\n.sr-only[data-v-67440b5c] {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  white-space: nowrap;\n  border: 0;\n}\n@media (max-width: 600px) {\n.about__grid[data-v-67440b5c] {\n    grid-template-columns: 1fr;\n}\n.about__col--full[data-v-67440b5c] {\n    grid-column: 1;\n}\n}\n";
+const _style_0 = "\n.about[data-v-0498ca28] {\n  font-family: \"DM Mono\", monospace;\n}\n.mfe-badge[data-v-0498ca28] {\n  display: inline-block;\n  font-size: 0.6rem;\n  letter-spacing: 0.15em;\n  text-transform: uppercase;\n  padding: 0.2rem 0.6rem;\n  border-radius: 999px;\n  border: 1px solid #42b883;\n  color: #42b883;\n  margin-bottom: 1.25rem;\n}\n.about__intro[data-v-0498ca28] {\n  margin-bottom: 3rem;\n}\n.section-title[data-v-0498ca28] {\n  font-family: \"DM Serif Display\", Georgia, serif;\n  font-size: clamp(1.8rem, 4vw, 2.8rem);\n  letter-spacing: -0.03em;\n  color: white;\n  margin-bottom: 0.75rem;\n}\n.about__lead[data-v-0498ca28] {\n  font-size: 0.875rem;\n  line-height: 1.7;\n  color: white;\n  max-width: 520px;\n}\n.about__grid[data-v-0498ca28] {\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n  gap: 3rem 4rem;\n}\n.about__col--full[data-v-0498ca28] {\n  grid-column: 1 / -1;\n}\n.col-heading[data-v-0498ca28] {\n  font-size: 0.65rem;\n  letter-spacing: 0.2em;\n  text-transform: uppercase;\n  color: white;\n  margin-bottom: 1.5rem;\n  padding-bottom: 0.5rem;\n  border-bottom: 1px solid #222228;\n}\n\n/* ── Skill filter tabs ── */\n.skill-tabs[data-v-0498ca28] {\n  display: flex;\n  gap: 0.35rem;\n  margin-bottom: 1.25rem;\n  flex-wrap: wrap;\n}\n.tab-btn[data-v-0498ca28] {\n  font-family: inherit;\n  font-size: 0.65rem;\n  letter-spacing: 0.1em;\n  text-transform: uppercase;\n  padding: 0.25rem 0.65rem;\n  border-radius: 999px;\n  border: 1px solid #2a2a30;\n  background: transparent;\n  color: white;\n  cursor: pointer;\n  transition:\n    border-color 150ms ease,\n    color 150ms ease,\n    background 150ms ease;\n}\n.tab-btn[data-v-0498ca28]:hover {\n  border-color: #42b883;\n  color: #42b883;\n}\n.tab-btn--active[data-v-0498ca28] {\n  border-color: #42b883;\n  color: #42b883;\n  background: rgba(66, 184, 131, 0.08);\n}\n\n/* ── Skills ── */\n.skill-list[data-v-0498ca28] {\n  list-style: none;\n  padding: 0;\n  display: flex;\n  flex-direction: column;\n  gap: 0.85rem;\n}\n.skill-item[data-v-0498ca28] {\n  display: grid;\n  grid-template-columns: 130px 1fr;\n  align-items: center;\n  gap: 1rem;\n  font-size: 0.75rem;\n  color: white;\n}\n.skill-item__bar[data-v-0498ca28] {\n  display: block;\n  height: 2px;\n  background: #222228;\n  border-radius: 999px;\n  position: relative;\n  overflow: hidden;\n}\n.skill-item__bar[data-v-0498ca28]::after {\n  content: \"\";\n  position: absolute;\n  inset: 0;\n  width: var(--w, 0%);\n  background: #42b883;\n  border-radius: 999px;\n  animation: barGrow-0498ca28 0.8s cubic-bezier(0.4, 0, 0.2, 1) both;\n}\n@keyframes barGrow-0498ca28 {\nfrom {\n    width: 0;\n}\nto {\n    width: var(--w);\n}\n}\n\n/* ── TransitionGroup: .skill-enter/leave classes ── */\n.skill-list[data-v-0498ca28] {\n  position: relative; /* anchor for leave-active absolute positioning */\n}\n.skill-enter-active[data-v-0498ca28],\n.skill-leave-active[data-v-0498ca28] {\n  transition:\n    opacity 0.25s ease,\n    transform 0.25s ease;\n}\n\n/* Item that is leaving is taken out of flow so others can FLIP into place */\n.skill-leave-active[data-v-0498ca28] {\n  position: absolute;\n  width: 100%;\n}\n.skill-enter-from[data-v-0498ca28] {\n  opacity: 0;\n  transform: translateX(-10px);\n}\n.skill-leave-to[data-v-0498ca28] {\n  opacity: 0;\n  transform: translateX(10px);\n}\n\n/* ── Timeline ── */\n.timeline[data-v-0498ca28] {\n  list-style: none;\n  padding: 0;\n  display: flex;\n  flex-direction: column;\n  gap: 0;\n}\n.timeline__item[data-v-0498ca28] {\n  display: grid;\n  grid-template-columns: 72px 1fr;\n  grid-template-rows: auto auto;\n  column-gap: 1rem;\n  padding: 0.9rem 0;\n  border-bottom: 1px solid #1a1a1f;\n  font-size: 0.75rem;\n}\n.timeline__period[data-v-0498ca28] {\n  grid-row: 1 / 3;\n  color: white;\n  font-size: 0.65rem;\n  padding-top: 2px;\n  letter-spacing: 0.05em;\n}\n.timeline__role[data-v-0498ca28] {\n  color: white;\n}\n.timeline__company[data-v-0498ca28] {\n  color: white;\n  font-size: 0.7rem;\n  margin-top: 2px;\n}\n\n/* ── Values ── */\n.values-list[data-v-0498ca28] {\n  list-style: none;\n  padding: 0;\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));\n  gap: 1px;\n  border: 1px solid #222228;\n}\n.value-card[data-v-0498ca28] {\n  background: #131316;\n  padding: 1.5rem;\n  display: flex;\n  gap: 1rem;\n  align-items: flex-start;\n  transition: background 200ms ease;\n}\n.value-card[data-v-0498ca28]:hover {\n  background: #1a1a1f;\n}\n.value-card__icon[data-v-0498ca28] {\n  font-size: 1.2rem;\n  flex-shrink: 0;\n  margin-top: 2px;\n}\n.value-card__label[data-v-0498ca28] {\n  display: block;\n  font-size: 0.8rem;\n  color: white;\n  margin-bottom: 0.4rem;\n  font-weight: 500;\n}\n.value-card__desc[data-v-0498ca28] {\n  font-size: 0.75rem;\n  line-height: 1.6;\n  color: white;\n}\n.sr-only[data-v-0498ca28] {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  white-space: nowrap;\n  border: 0;\n}\n@media (max-width: 600px) {\n.about__grid[data-v-0498ca28] {\n    grid-template-columns: 1fr;\n}\n.about__col--full[data-v-0498ca28] {\n    grid-column: 1;\n}\n}\n";
 
 const _export_sfc = (sfc, props) => {
   const target = sfc.__vccOpts || sfc;
@@ -567,6 +595,6 @@ const _export_sfc = (sfc, props) => {
   return target;
 };
 
-const AboutPage = /* @__PURE__ */ _export_sfc(_sfc_main, [["styles", [_style_0]], ["__scopeId", "data-v-67440b5c"]]);
+const AboutPage = /* @__PURE__ */ _export_sfc(_sfc_main, [["styles", [_style_0]], ["__scopeId", "data-v-0498ca28"]]);
 
 export { AboutPage as A, _export_sfc as _, createPinia as c };

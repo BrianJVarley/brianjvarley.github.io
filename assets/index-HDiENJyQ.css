@@ -1,14 +1,14 @@
 /* ─── Design tokens ─────────────────────────────────────────────────── */
 :root {
-  --bg:        #0c0c0e;
-  --surface:   #131316;
-  --border:    #222228;
-  --text:      #e8e6e1;
-  --muted:     #6b6970;
-  --accent:    #23c4eb;  
+  --bg:        #0b1e2d;
+  --surface:   #112233;
+  --border:    #1e3a52;
+  --text:      #ddeeff;
+  --muted:     #6b93b5;
+  --accent:    #00d4aa;
   --react:     #61dafb;
   --vue:       #42b883;
-  --shell:     #d4ff5c;
+  --shell:     #38bdf8;
 
   --font-display: 'DM Serif Display', Georgia, serif;
   --font-mono:    'DM Mono', 'Fira Code', monospace;
@@ -250,7 +250,7 @@ strong { font-weight: 500; }
   display: flex;
   align-items: center;
   gap: 0.4rem;
-  color: var(--muted);
+  color: var(--text);
   transition: color var(--transition);
 }
 

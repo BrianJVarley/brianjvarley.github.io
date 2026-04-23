@@ -1,5 +1,5 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/localSharedImportMap-CatRCBel.js","assets/preload-helper-BrBMkJ7E.js","assets/virtualExposes-BblNf1Nr.js"])))=>i.map(i=>d[i]);
-import { _ as __vitePreload } from './preload-helper-BrBMkJ7E.js';
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/localSharedImportMap-6Kt9BnJP.js","assets/preload-helper-C4ldYmuB.js","assets/virtualExposes-Dg1aUkQS.js"])))=>i.map(i=>d[i]);
+import { _ as __vitePreload } from './preload-helper-C4ldYmuB.js';
 
 var dist$3 = {};
 
@@ -4244,7 +4244,7 @@ utils$2.getGlobalFederationInstance = getGlobalFederationInstance;
   }
   
   
-const __mfResolveGlobalKey = "__mf_init____mf__virtual/__mfe_internal__vueMfe__mf_v__runtimeInit__mf_v__.js__";
+const __mfResolveGlobalKey = "__mf_init____mf__virtual/__mfe_internal__reactMfe__mf_v__runtimeInit__mf_v__.js__";
 let __mfResolveState = globalThis[__mfResolveGlobalKey];
 if (!__mfResolveState) {
   let initResolve, initReject;
@@ -4268,17 +4268,17 @@ const initResolve = __mfResolveState.initResolve;
 
   const initTokens = {};
   const shareScopeName = "default";
-  const mfName = "__mfe_internal__vueMfe";
+  const mfName = "__mfe_internal__reactMfe";
   let localSharedImportMapPromise;
   let exposesMapPromise;
 
   async function getLocalSharedImportMap() {
-    localSharedImportMapPromise ??= __vitePreload(() => import('./localSharedImportMap-CatRCBel.js'),true              ?__vite__mapDeps([0,1]):void 0);
+    localSharedImportMapPromise ??= __vitePreload(() => import('./localSharedImportMap-6Kt9BnJP.js'),true              ?__vite__mapDeps([0,1]):void 0);
     return localSharedImportMapPromise
   }
 
   async function getExposesMap() {
-    exposesMapPromise ??= __vitePreload(() => import('./virtualExposes-BblNf1Nr.js'),true              ?__vite__mapDeps([2,1]):void 0).then((mod) => mod.default ?? mod);
+    exposesMapPromise ??= __vitePreload(() => import('./virtualExposes-Dg1aUkQS.js'),true              ?__vite__mapDeps([2,1]):void 0).then((mod) => mod.default ?? mod);
     return exposesMapPromise
   }
 

@@ -1,7 +1,7 @@
-import './virtualExposes-BblNf1Nr.js';
-import './remoteEntry-Bhyp4y5R.js';
-import { a as __mf_93, b as __mf_132, c as __mf_83, d as __mf_84, e as __mf_91, f as __mf_4 } from './__mfe_internal__vueMfe__loadShare__vue__loadShare__.js-7Qbf8ykb.js';
-import { A as AboutPage, _ as _export_sfc, c as createPinia } from './AboutPage-BnqoWZo2.js';
+import './virtualExposes-DylV8jDw.js';
+import './remoteEntry-s_bnlv9E.js';
+import { a as __mf_93, b as __mf_132, c as __mf_83, d as __mf_84, e as __mf_91, f as __mf_4 } from './__mfe_internal__vueMfe__loadShare__vue__loadShare__.js-BPbMAQkh.js';
+import { A as AboutPage, _ as _export_sfc, c as createPinia } from './AboutPage-D2rJ4FQG.js';
 import './preload-helper-BrBMkJ7E.js';
 
 true              &&(function polyfill() {

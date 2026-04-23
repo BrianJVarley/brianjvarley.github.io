@@ -1,4 +1,4 @@
-import { _ as __vitePreload } from './preload-helper-BrBMkJ7E.js';
+import { _ as __vitePreload } from './preload-helper-C4ldYmuB.js';
 
 const cssAssetMap = {};
     const injectedCssHrefs = new Set();
@@ -51,12 +51,12 @@ const cssAssetMap = {};
       );
     }
 
-    const virtual_mfExposes___mfe_internal__vueMfe__remoteEntry_hash_ = {
+    const virtual_mfExposes___mfe_internal__reactMfe__remoteEntry_hash_ = {
     
-        "./AboutPage": async () => {
-          await injectCssAssets("./AboutPage");
+        "./ProjectsPage": async () => {
+          await injectCssAssets("./ProjectsPage");
           const importModule = await importExposedModule(
-            () => __vitePreload(() => import('./AboutPageWrapper-D5weNTmV.js'),true              ?[]:void 0)
+            () => __vitePreload(() => import('./ProjectsPage-F8OQNg7r.js').then(n => n.b),true              ?[]:void 0)
           );
           const exportModule = {};
           Object.assign(exportModule, importModule);
@@ -69,4 +69,4 @@ const cssAssetMap = {};
       
   };
 
-export { virtual_mfExposes___mfe_internal__vueMfe__remoteEntry_hash_ as default };
+export { virtual_mfExposes___mfe_internal__reactMfe__remoteEntry_hash_ as default };

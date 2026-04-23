@@ -13242,7 +13242,7 @@ const projects = [
   {
     id: 4,
     company: "HPE",
-    title: "Data Center Infrastructure Management",
+    title: "Data Driven Metrics Dashboard",
     tech: ["React", "JavaScript", "Redux", "D3", "SCSS", "Highcharts"],
     description: "Led frontend development for a data center infrastructure management tool, creating interactive visualizations and dashboards to monitor and optimize data center performance.",
     year: "2016",
@@ -13271,17 +13271,25 @@ function FiltersComponent() {
       setFilters(void 0);
     }
   };
-  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "filters-component", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("label", { children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx(
-      "input",
-      {
-        type: "checkbox",
-        checked: isLatestEnabled,
-        onChange: (e) => handleProjectsToggle(e.target.checked)
-      }
-    ),
-    "Latest Projects"
-  ] }) });
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "filters-component", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("label", { children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        "input",
+        {
+          type: "checkbox",
+          className: "projects-filter",
+          checked: isLatestEnabled,
+          onChange: (e) => handleProjectsToggle(e.target.checked)
+        }
+      ),
+      "Latest Projects"
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("style", { children: `
+        .projects-filter { margin-right: 1rem; }
+
+      
+      ` })
+  ] });
 }
 
 function useLoadingAnimation() {
@@ -13381,8 +13389,25 @@ function ProjectsPageInner() {
     };
   }, [data]);
   __mf_28(() => {
-    document.title = isLoading ? "Selected Work | Loading" : `Selected Work (${projectStats.totalProjects} projects)`;
+    document.title = isLoading ? "Projects | Loading" : `${projectStats.totalProjects} projects`;
   }, [isLoading, projectStats.totalProjects]);
+  const [summaryAnnouncement, setSummaryAnnouncement] = __mf_38("");
+  __mf_28(() => {
+    if (isLoading || !data) return;
+    setSummaryAnnouncement("");
+    const id = setTimeout(() => {
+      setSummaryAnnouncement(
+        `${projectStats.totalProjects} projects across ${projectStats.totalTechnologies} technologies${projectStats.totalCompanies > 0 ? ` for ${projectStats.totalCompanies} companies & portfolios` : ""}`
+      );
+    }, 100);
+    return () => clearTimeout(id);
+  }, [
+    isLoading,
+    data,
+    projectStats.totalProjects,
+    projectStats.totalTechnologies,
+    projectStats.totalCompanies
+  ]);
   const handleGlobalKeydownRef = __mf_37(
     () => {
     }
@@ -13442,7 +13467,6 @@ function ProjectsPageInner() {
   }
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("section", { className: "mfe-page", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "projects-header mfe-header-top", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "mfe-badge mfe-badge--react", children: "React MFE" }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(
         MotionButton,
         {
@@ -13450,21 +13474,14 @@ function ProjectsPageInner() {
           onClick: handleSelectedWorkClick,
           whileHover: { scale: 1.03 },
           whileTap: { scale: 0.97 },
-          className: "selected-work-button",
-          children: "Selected Work"
+          className: "mfe-badge mfe-badge--react",
+          children: "React MFE"
         }
       ),
       /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "section-sub", children: "A few things I've shipped." })
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsx(FiltersComponent, {}),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "projects-summary", "aria-live": "polite", children: [
-      projectStats.totalProjects,
-      " projects across",
-      " ",
-      projectStats.totalTechnologies,
-      " technologies",
-      projectStats.totalCompanies > 0 ? ` for ${projectStats.totalCompanies} companies & portfolios` : ""
-    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "projects-summary", "aria-live": "polite", "aria-atomic": "true", children: summaryAnnouncement }),
     /* @__PURE__ */ jsxRuntimeExports.jsx("ul", { className: "project-grid", role: "list", children: data?.map((p) => /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { className: "project-card", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "project-card__meta", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "project-card__year", children: p.year }),
@@ -13508,6 +13525,7 @@ function ProjectsPageInner() {
         .mfe-badge--react {
           border: 1px solid #61dafb;
           color: #61dafb;
+          background: transparent;  
         }
 
         .selected-work-button {
@@ -13520,17 +13538,17 @@ function ProjectsPageInner() {
           font-family: 'DM Serif Display', Georgia, serif;
           font-size: clamp(1.8rem, 4vw, 2.8rem);
           letter-spacing: -0.03em;
-          color: #e8e6e1;
+          color: white;
           margin-bottom: 0.5rem;
         }
 
         .section-sub {
-          color: #6b6970;
+          color: white;
           font-size: 0.875rem;
         }
 
         .projects-summary {
-          color: #9a9898;
+          color: white;
           font-size: 0.75rem;
           letter-spacing: 0.08em;
           text-transform: uppercase;
@@ -13591,14 +13609,14 @@ function ProjectsPageInner() {
           font-size: 0.65rem;
           letter-spacing: 0.1em;
           text-transform: uppercase;
-          color: #6b6970;
+          color: white;
           margin-bottom: 1rem;
         }
 
         .project-card__title {
           font-family: 'DM Serif Display', Georgia, serif;
           font-size: 1.3rem;
-          color: #e8e6e1;
+          color: white;
           margin-bottom: 0.75rem;
           letter-spacing: -0.02em;
         }
@@ -13606,7 +13624,7 @@ function ProjectsPageInner() {
         .project-card__desc {
           font-size: 0.8rem;
           line-height: 1.65;
-          color: #9a9898;
+          color: white;
           margin-bottom: 1.25rem;
         }
 
@@ -13624,7 +13642,7 @@ function ProjectsPageInner() {
           text-transform: uppercase;
           background: #1e1e24;
           border: 1px solid #2a2a32;
-          color: #9a9898;
+          color: white;
           padding: 0.2rem 0.55rem;
           border-radius: 3px;
         }

@@ -47,7 +47,9 @@ var jsxRuntimeExports = jsxRuntime.exports;
 const AboutPageElement = __mf_6(AboutPage$1, {
   configureApp(app) {
     app.use(createPinia());
-  }
+  },
+  shadowRoot: true
+  // enable Shadow DOM encapsulation
 });
 if (!customElements.get("about-page")) {
   customElements.define("about-page", AboutPageElement);

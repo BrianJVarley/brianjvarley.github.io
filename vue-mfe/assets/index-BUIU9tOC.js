@@ -1,5 +1,5 @@
-import './virtualExposes-jpWPYbV2.js';
-import './remoteEntry-CubYZkAv.js';
+import './virtualExposes-DRK-Tg-0.js';
+import './remoteEntry-DSo9XhkI.js';
 import { a as __mf_93, b as __mf_132, c as __mf_83, d as __mf_84, e as __mf_91, f as __mf_4 } from './__mfe_internal__vueMfe__loadShare__vue__loadShare__.js-BPbMAQkh.js';
 import { A as AboutPage, _ as _export_sfc, c as createPinia } from './AboutPage-B2bd6qMt.js';
 import './preload-helper-BrBMkJ7E.js';

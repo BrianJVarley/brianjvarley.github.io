@@ -16637,11 +16637,13 @@ function App() {
 function HomePage() {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("section", { className: "home", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "home__eyebrow", children: "Frontend Engineer" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "home__identity", children: "Brian Varley · Based in the Netherlands" }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("h1", { className: "home__headline", children: [
-      "A snapshot of my",
+      "Brian Varley",
       /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("em", { children: "work & experience." })
+      /* @__PURE__ */ jsxRuntimeExports.jsx("em", { children: "Frontend work & experience." })
     ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "home__sub", children: "I am a frontend engineer in the Netherlands focused on building performant web interfaces and scalable frontend architecture." }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "home__sub", children: [
       "This portfolio is a micro-frontend shell — the Projects section runs in",
       " ",
